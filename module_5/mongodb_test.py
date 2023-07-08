@@ -6,4 +6,4 @@ url = "mongodb+srv://admin:admin@cluster0.8do7jnn.mongodb.net/?retryWrites=true&
 client = MongoClient(url)
 #create a variable named db
 db = client.pytech
-print(db.list_collection_names)     
+print(db.list_collection_names())     
