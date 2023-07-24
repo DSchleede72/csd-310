@@ -8,7 +8,7 @@ config = {
     "raise_on_warnings": True
 }
 db=mysql.connector.connect(**config)
-print("\n Database user {} connected to MySQL on host {} with database {}".format(config["user"], config["host"], config["database"]))
+print("Database user {} connected to MySQL on host {} with database {}".format(config["user"], config["host"], config["database"]))
 
 try:
     
@@ -24,7 +24,7 @@ try:
     #iterate team data and print results to terminal
     for team in teams: 
         print("  Team ID: {}\n  Team Name: {}\n  Mascot: {}\n".format(team[0], team[1], team[2]))
-        
+
     # player table query 
     cursor.execute("SELECT player_id, first_name, last_name, team_id FROM player")
     players = cursor.fetchall()
