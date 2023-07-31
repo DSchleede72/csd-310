@@ -72,3 +72,4 @@ except mysql.connector.Error as err:
 finally:
    #close existing database connection
     db.close()
+    
