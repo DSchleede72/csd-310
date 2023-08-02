@@ -1,8 +1,8 @@
 -- create the database and associated user
--- create database whatabook;
+create database whatabook;
 use whatabook;
--- CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL8IsGreat!';
--- GRANT ALL PRIVILEGES ON whatabook.* TO 'whatabook_user'@'localhost';
+CREATE USER 'whatabook_user'@'localhost' IDENTIFIED WITH mysql_native_password BY 'MySQL8IsGreat!';
+GRANT ALL PRIVILEGES ON whatabook.* TO 'whatabook_user'@'localhost';
 -- create required tables
 CREATE TABLE user(
 	user_id INT NOT NULL AUTO_INCREMENT,
